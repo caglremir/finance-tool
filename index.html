@@ -1,0 +1,27 @@
+ <!DOCTYPE html>
+<html>
+<head>
+    <title>Finance Tool</title>
+</head>
+<body>
+    <h1>Finance Calculator</h1>
+
+    <input type="number" id="num" placeholder="Enter number">
+    <button onclick="calculate()">Calculate Square</button>
+
+    <p id="result"></p>
+
+    <script>
+        async function calculate() {
+            const value = document.getElementById("num").value;
+
+            const response = await fetch("https://YOUR_FUNCTION_URL/api/CalculateArea?value=" + value);
+
+            const data = await response.json();
+
+            document.getElementById("result").innerText =
+                "Result: " + data.result;
+        }
+    </script>
+</body>
+</html>
