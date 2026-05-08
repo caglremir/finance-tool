@@ -15,7 +15,7 @@
         async function calculate() {
             const value = document.getElementById("num").value;
 
-            const response = await fetch(https://financefunctionemirhan-h8hzctg6fnc6a7ge.swedencentral-01.azurewebsites.net/api/CalculateArea?code=BjwGgYkWNfIYXZKlwVkcUqoMJA34USvAFa1RSAimFUuFAzFu7s9i1Q==/api/CalculateArea?value=" + value);
+            const response = await fetch("https://financefunctionemirhan-h8hzctg6fnc6a7ge.swedencentral-01.azurewebsites.net/api/CalculateArea?code=BjwGgYkWNfIYXZKlwVkcUqoMJA34USvAFa1RSAimFUuFAzFu7s9i1Q==&value=" + value);
 
             const data = await response.json();
 
